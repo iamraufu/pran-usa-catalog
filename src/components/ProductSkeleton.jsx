@@ -1,0 +1,71 @@
+export default function ProductSkeleton() {
+  return (
+    <div
+      className="
+bg-white
+rounded-3xl
+shadow-md
+overflow-hidden
+animate-pulse
+mt-5
+"
+    >
+      <div
+        className="
+h-52
+bg-gray-200
+"
+      />
+
+      <div
+        className="
+p-5
+space-y-4
+"
+      >
+        <div
+          className="
+h-5
+bg-gray-200
+rounded
+w-3/4
+"
+        />
+
+        <div
+          className="
+h-4
+bg-gray-200
+rounded
+w-1/2
+"
+        />
+
+        <div
+          className="
+flex
+justify-between
+"
+        >
+          <div
+            className="
+h-8
+bg-gray-200
+rounded-xl
+w-20
+"
+          />
+
+          <div
+            className="
+h-8
+bg-gray-200
+rounded-xl
+w-16
+"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

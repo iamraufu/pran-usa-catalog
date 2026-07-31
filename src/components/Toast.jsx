@@ -1,0 +1,39 @@
+export default function Toast({ message }) {
+  return (
+    <div
+      className="
+      fixed
+      bottom-6
+      right-6
+      z-[100]
+      bg-gray-900
+      text-white
+      px-6
+      py-4
+      rounded-2xl
+      shadow-2xl
+      flex
+      items-center
+      gap-3
+      animate-bounce
+      "
+    >
+      <span
+        className="
+      text-green-400
+      text-xl
+      "
+      >
+        ✓
+      </span>
+
+      <span
+        className="
+      font-semibold
+      "
+      >
+        {message}
+      </span>
+    </div>
+  );
+}
