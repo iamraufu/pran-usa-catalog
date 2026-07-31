@@ -1,14 +1,14 @@
 const productImages = {
   mango_juice: {
-    image: "../../src/assets/mango_juice.png",
+    image: "../../public/assets/mango_juice.png",
     products: ["67", "68", "70", "71"],
   },
   litchi_drinks: {
-    image: "../../src/assets/litchi_drinks.png",
+    image: "../../public/assets/litchi_drinks.png",
     products: ["65", "66", "77"],
   },
   basil_drinks: {
-    image: "../../src/assets/basil_drinks.png",
+    image: "../../public/assets/basil_drinks.png",
     products: [
       "427",
       "428",
@@ -23,7 +23,7 @@ const productImages = {
     ],
   },
   coconut_milk_drinks: {
-    image: "../../src/assets/coconut_milk_drinks.png",
+    image: "../../public/assets/coconut_milk_drinks.png",
     products: [
       "1227",
       "1228",
@@ -36,7 +36,7 @@ const productImages = {
     ],
   },
   fruit_drink: {
-    image: "../../src/assets/fruit_drink.png",
+    image: "../../public/assets/fruit_drink.png",
     products: [
       "100032",
       "100033",
@@ -48,11 +48,11 @@ const productImages = {
     ],
   },
   coconut_water: {
-    image: "../../src/assets/coconut_water.png",
+    image: "../../public/assets/coconut_water.png",
     products: ["431", "10201"],
   },
   drinko: {
-    image: "../../src/assets/drinko.png",
+    image: "../../public/assets/drinko.png",
     products: [
       "60583",
       "59752",
@@ -65,11 +65,11 @@ const productImages = {
     ],
   },
   aloe_drink_500ml: {
-    image: "../../src/assets/aloe_drink_500ml.png",
+    image: "../../public/assets/aloe_drink_500ml.png",
     products: ["1221", "8088", "8214", "8215"],
   },
   aloe_drink_1500ml: {
-    image: "../../src/assets/aloe_drink_1500ml.png",
+    image: "../../public/assets/aloe_drink_1500ml.png",
     products: [
       "10183",
       "2575",
@@ -83,135 +83,135 @@ const productImages = {
     ],
   },
   pudding: {
-    image: "../../src/assets/pudding.png",
+    image: "../../public/assets/pudding.png",
     products: ["16567", "10057", "58788"],
   },
   mango_tetra: {
-    image: "../../src/assets/mango_tetra.png",
+    image: "../../public/assets/mango_tetra.png",
     products: ["75"],
   },
   "500ml_can": {
-    image: "../../src/assets/500ml_can.png",
+    image: "../../public/assets/500ml_can.png",
     products: ["58594", "58595", "58596", "58597", "58598"],
   },
   glass_bottle: {
-    image: "../../src/assets/glass_bottle.png",
+    image: "../../public/assets/glass_bottle.png",
     products: ["100031", "100060", "58589"],
   },
   jelly_fruits_drink: {
-    image: "../../src/assets/jelly_fruits_drink.png",
+    image: "../../public/assets/jelly_fruits_drink.png",
     products: ["62982"],
   },
   ice_lolly: {
-    image: "../../src/assets/ice_lolly.png",
+    image: "../../public/assets/ice_lolly.png",
     products: ["16569", "62983", "22202"],
   },
   jelly_drink: {
-    image: "../../src/assets/jelly_drink.png",
+    image: "../../public/assets/jelly_drink.png",
     products: ["16568", "100056"],
   },
   dino: {
-    image: "../../src/assets/dino.png",
+    image: "../../public/assets/dino.png",
     products: ["10056"],
   },
   potata_100gm: {
-    image: "../../src/assets/potata_100gm.png",
+    image: "../../public/assets/potata_100gm.png",
     products: ["10046"],
   },
   potata_600gm: {
-    image: "../../src/assets/potata_600gm.png",
+    image: "../../public/assets/potata_600gm.png",
     products: ["10169", "10168", "63681", "63682", "63683"],
   },
   choice_tea: {
-    image: "../../src/assets/choice_tea.png",
+    image: "../../public/assets/choice_tea.png",
     products: ["10048", "8090", "1102400"],
   },
   black_forest: {
-    image: "../../src/assets/black_forest.png",
+    image: "../../public/assets/black_forest.png",
     products: ["10119", "59890"],
   },
   roma: {
-    image: "../../src/assets/roma.png",
+    image: "../../public/assets/roma.png",
     products: ["12202300", "12202301"],
   },
   pran_biscuit_70gm: {
-    image: "../../src/assets/pran_biscuit_70gm.png",
+    image: "../../public/assets/pran_biscuit_70gm.png",
     products: ["59798", "58544"],
   },
   cookies_jar: {
-    image: "../../src/assets/cookies_jar.png",
+    image: "../../public/assets/cookies_jar.png",
     products: ["10038", "19021", "19022"],
   },
   biscuits: {
-    image: "../../src/assets/biscuits.png",
+    image: "../../public/assets/biscuits.png",
     products: ["21", "126", "127", "35380", "10018", "61285"],
   },
   rusk_lexus: {
-    image: "../../src/assets/rusk_lexus.png",
+    image: "../../public/assets/rusk_lexus.png",
     products: ["16578", "10021"],
   },
   fit: {
-    image: "../../src/assets/fit.png",
+    image: "../../public/assets/fit.png",
     products: ["117"],
   },
   butter_cookies: {
-    image: "../../src/assets/butter_cookies.png",
+    image: "../../public/assets/butter_cookies.png",
     products: ["18"],
   },
   dry_cake: {
-    image: "../../src/assets/dry_cake.png",
+    image: "../../public/assets/dry_cake.png",
     products: ["4062", "4063", "10122", "8056"],
   },
   "560gm": {
-    image: "../../src/assets/560gm.png",
+    image: "../../public/assets/560gm.png",
     products: ["10113", "10112", "10111", "116", "10110"],
   },
   toast: {
-    image: "../../src/assets/toast.png",
+    image: "../../public/assets/toast.png",
     products: ["317", "10289", "10312313", "8213", "10291", "61982"],
   },
   crunchy_wafer: {
-    image: "../../src/assets/crunchy_wafer.png",
+    image: "../../public/assets/crunchy_wafer.png",
     products: ["16539", "16538", "16537", "16540"],
   },
   bela: {
-    image: "../../src/assets/bela.png",
+    image: "../../public/assets/bela.png",
     products: ["10227"],
   },
   mithai: {
-    image: "../../src/assets/mithai.png",
+    image: "../../public/assets/mithai.png",
     products: ["58646", "58647", "58648", "58649", "58650", "58651", "58652"],
   },
   chanachur: {
-    image: "../../src/assets/chanachur.png",
+    image: "../../public/assets/chanachur.png",
     products: ["261", "262", "263", "60584", "60585"],
   },
   chanachur_hot: {
-    image: "../../src/assets/chanachur_hot.png",
+    image: "../../public/assets/chanachur_hot.png",
     products: ["58583", "58584", "58585"],
   },
   bhaja: {
-    image: "../../src/assets/bhaja.png",
+    image: "../../public/assets/bhaja.png",
     products: ["266", "267", "270", "272"],
   },
   potato: {
-    image: "../../src/assets/potato.png",
+    image: "../../public/assets/potato.png",
     products: ["280", "281", "2232402", "61556", "61557", "61558"],
   },
   chanachurs: {
-    image: "../../src/assets/chanchurs.png",
+    image: "../../public/assets/chanchurs.png",
     products: ["62514", "62512", "62513", "62515", "62516", "62517", "62518"],
   },
   muri_moa: {
-    image: "../../src/assets/muri_moa.png",
+    image: "../../public/assets/muri_moa.png",
     products: ["11162", "62456"],
   },
   cadbury: {
-    image: "../../src/assets/cadbury.png",
+    image: "../../public/assets/cadbury.png",
     products: ["10115", "10177", "10179", "11350"],
   },
   cadbury2: {
-    image: "../../src/assets/cadbury2.png",
+    image: "../../public/assets/cadbury2.png",
     products: [
       "10181",
       "10176",
@@ -224,19 +224,19 @@ const productImages = {
     ],
   },
   wonder_kids: {
-    image: "../../src/assets/wonder_kids.png",
+    image: "../../public/assets/wonder_kids.png",
     products: ["10003"],
   },
   wonder_kids_box: {
-    image: "../../src/assets/wonder_kids_box.png",
+    image: "../../public/assets/wonder_kids_box.png",
     products: ["8053", "16587"],
   },
   wonder_kids_mega: {
-    image: "../../src/assets/wonder_kids_mega.png",
+    image: "../../public/assets/wonder_kids_mega.png",
     products: ["10006"],
   },
   lollipop: {
-    image: "../../src/assets/lollipop.png",
+    image: "../../public/assets/lollipop.png",
     products: [
       "286",
       "288",
@@ -252,27 +252,27 @@ const productImages = {
     ],
   },
   lollipop_mega: {
-    image: "../../src/assets/lollipop_mega.png",
+    image: "../../public/assets/lollipop_mega.png",
     products: ["1651"],
   },
   juicy_pop: {
-    image: "../../src/assets/juicy_pop.png",
+    image: "../../public/assets/juicy_pop.png",
     products: ["10055"],
   },
   plus_candy: {
-    image: "../../src/assets/plus_candy.png",
+    image: "../../public/assets/plus_candy.png",
     products: ["10077"],
   },
   pudding_assorted: {
-    image: "../../src/assets/pudding_assorted.png",
+    image: "../../public/assets/pudding_assorted.png",
     products: ["16567"],
   },
   mango_bar: {
-    image: "../../src/assets/mango_bar.png",
+    image: "../../public/assets/mango_bar.png",
     products: ["257", "258"],
   },
   choco_stick: {
-    image: "../../src/assets/choco_stick.png",
+    image: "../../public/assets/choco_stick.png",
     products: ["16591"],
   },
 };

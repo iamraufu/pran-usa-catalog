@@ -1,5 +1,5 @@
 import productImages from "../data/productImages";
-import placeholder from "../assets/placeholder.jpg";
+import placeholder from "../../public/assets/placeholder.jpg";
 
 const imageMap = {};
 
