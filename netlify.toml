@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/warehouse/*"
+to = "http://spro.prgfms.com/:splat"
+status = 200
+force = true
