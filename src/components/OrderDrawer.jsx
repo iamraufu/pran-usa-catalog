@@ -95,7 +95,7 @@ export default function OrderDrawer() {
           fixed
           inset-0
           bg-black/40
-          z-40
+          z-50
           "
           onClick={() => setOpen(false)}
         >
@@ -503,7 +503,7 @@ mb-4
 
                     <span
                       className="
-        text-3xl
+        text-xl
         font-bold
         text-red-600
         "
