@@ -1,9 +1,20 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const OrderContext = createContext(null);
 
 export function OrderProvider({ children }) {
-  const [orderItems, setOrderItems] = useState([]);
+  const [orderItems, setOrderItems] = useState(() => {
+  const saved = localStorage.getItem("pran_order");
+
+  return saved ? JSON.parse(saved) : [];
+});
+
+useEffect(() => {
+  localStorage.setItem(
+    "pran_order",
+    JSON.stringify(orderItems),
+  );
+}, [orderItems]);
 
   // Add product to order
   function addToOrder(product) {
@@ -60,9 +71,10 @@ export function OrderProvider({ children }) {
 
   // Empty order after sending
   function clearOrder() {
-    console.log("first")
-    setOrderItems([]);
-  }
+  setOrderItems([]);
+
+  localStorage.removeItem("pran_order");
+}
 
   // Total carton amount
   function getTotalAmount() {
