@@ -1,5 +1,5 @@
 import productImages from "../data/productImages";
-import placeholder from "../../public/assets/placeholder.jpg";
+import placeholder from "/assets/placeholder.jpg";
 
 const imageMap = {};
 
@@ -8,7 +8,6 @@ Object.values(productImages).forEach((group) => {
     imageMap[code] = group.image;
   });
 });
-
 
 export const getProductImage = (itemCode) => {
   return imageMap[String(itemCode)] || placeholder;
