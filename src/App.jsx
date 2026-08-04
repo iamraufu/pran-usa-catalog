@@ -95,9 +95,8 @@ bg-gray-100
             <div>
               <h1
                 className="
-          text-xl
-          sm:text-2xl
-          lg:text-3xl
+                text-base
+          md:text-xl
           font-bold
           "
               >
@@ -162,26 +161,33 @@ bg-gray-100
         "
               placeholder="Search products..."
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value;
+
+                setSearch(value);
+
+                if (value.trim()) {
+                  setCategory("ALL");
+                }
+              }}
             />
           </div>
         </div>
 
-{/* CATEGORY */}
-      {loading ? (
-        <CategorySkeleton />
-      ) : (
-        <CategoryNav
-          categories={categories}
-          products={products}
-          category={category}
-          setCategory={setCategory}
-        />
-      )}
-
+        {/* CATEGORY */}
+        {loading ? (
+          <CategorySkeleton />
+        ) : (
+          <CategoryNav
+            categories={categories}
+            products={products}
+            category={category}
+            setCategory={setCategory}
+          />
+        )}
       </header>
 
-      <main className="w-full px-3 sm:px-6 lg:px-8">
+      <main className="w-full px-3 sm:px-6 lg:px-8 mt-5">
         {/* PRODUCTS */}
 
         <div
