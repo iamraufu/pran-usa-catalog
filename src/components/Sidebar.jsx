@@ -9,7 +9,10 @@ export default function CategorySidebar({
         <h3 className="font-bold mb-4">Categories</h3>
 
         <button
-          onClick={() => setSelected("All")}
+          onClick={() => {
+            setSelected("All")
+          window.scrollTo(0,0)
+          }}
           className={`w-full text-left p-2 rounded mb-2 ${
             selected === "All"
               ? "bg-blue-600 text-white"
@@ -22,7 +25,10 @@ export default function CategorySidebar({
         {categories.map((cat) => (
           <button
             key={cat}
-            onClick={() => setSelected(cat)}
+            onClick={() => {
+              setSelected(cat)
+            window.scrollTo(0,0)
+            }}
             className={`w-full text-left p-2 rounded mb-2 ${
               selected === cat
                 ? "bg-blue-600 text-white"

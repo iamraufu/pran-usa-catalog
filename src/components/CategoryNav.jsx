@@ -49,7 +49,10 @@ border-white/20
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setCategory(cat)}
+              onClick={() => {
+                setCategory(cat);
+                window.scrollTo(0, 0);
+              }}
               className={`
               whitespace-nowrap
               px-5
@@ -60,10 +63,10 @@ border-white/20
 bg-white
 text-red-600
               ${
-  category === cat
-    ? "bg-white text-red-600 shadow-lg"
-    : "bg-white/20 text-white hover:bg-white/30"
-}
+                category === cat
+                  ? "bg-white text-red-600 shadow-lg"
+                  : "bg-white/20 text-white hover:bg-white/30"
+              }
 
               `}
             >
@@ -94,8 +97,8 @@ text-red-600
         "
       >
         <button
-  onClick={() => setOpen(true)}
-  className="
+          onClick={() => setOpen(true)}
+          className="
   w-full
   bg-white
   text-red-600
@@ -112,12 +115,11 @@ text-red-600
   hover:bg-red-50
   transition
   "
->
-  <Menu size={18} />
+        >
+          <Menu size={18} />
 
-  {category === "ALL" ? "All Products" : category}
-
-</button>
+          {category === "ALL" ? "All Products" : category}
+        </button>
       </div>
 
       {/* MOBILE SIDEBAR */}
@@ -148,7 +150,7 @@ text-red-600
             "
           >
             <div
-  className="
+              className="
   flex
   items-center
   justify-between
@@ -158,33 +160,32 @@ text-red-600
   border-b
   border-gray-200
   "
->
-  <div>
-    <h2
-      className="
+            >
+              <div>
+                <h2
+                  className="
       text-xl
       font-bold
       text-gray-800
       "
-    >
-      Categories
-    </h2>
+                >
+                  Categories
+                </h2>
 
-    <p
-      className="
+                <p
+                  className="
       text-sm
       text-gray-500
       mt-1
       "
-    >
-      Select products by category
-    </p>
-  </div>
+                >
+                  Select products by category
+                </p>
+              </div>
 
-
-  <button
-    onClick={() => setOpen(false)}
-    className="
+              <button
+                onClick={() => setOpen(false)}
+                className="
     w-10
     h-10
     flex
@@ -197,16 +198,18 @@ text-red-600
     hover:text-red-600
     transition
     "
-  >
-    <X size={20} />
-  </button>
-
-</div>
+              >
+                <X size={20} />
+              </button>
+            </div>
 
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => selectCategory(cat)}
+                onClick={() => {
+                  selectCategory(cat)
+                window.scrollTo(0,0)
+                }}
                 className={`
 w-full
 text-left
@@ -232,13 +235,9 @@ ${
                 <span
                   className={`
   text-sm
-  ${
-    category === cat
-      ? "text-white/80"
-      : "text-gray-400"
-  }
+  ${category === cat ? "text-white/80" : "text-gray-400"}
   `}
->
+                >
                   {getCount(cat)}
                 </span>
               </button>
